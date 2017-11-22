@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -22,7 +25,7 @@
 					<h1 id="logo"><a href="../index.html">Find_your_tutor</a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="../index.html">Welcome</a></li>
+							<li class="current"><a href="../index.html">Welcome <?php echo $_SESSION['username'];?> </a></li>
 						</ul>
 					</nav>
 				<section id="banner">
@@ -39,7 +42,7 @@
 				</section>
 
  <label id="img_category_label"class="field"for="img_category"data-value="">
-	<span>Category</span>
+	<span>Select Subject</span>
 	<div id="img_category"class="psuedo_select"name="img_category">
 		<span class="selected"></span>
 		<ul id="img_category_options"class="options">
