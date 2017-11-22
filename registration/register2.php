@@ -1,4 +1,4 @@
-<?php include('server1.php') ?>
+<?php include('server2.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +10,7 @@
 		<h2>Register</h2>
 	</div>
 
-	<form method="post" action="register.php">
+	<form method="post" action="register2.php">
 
 		<?php include('errors.php'); ?>
 
@@ -31,10 +31,22 @@
 			<input type="password" name="password_2">
 		</div>
 		<div class="input-group">
+			<label>Phone</label>
+			<input type="text" name="phone" value="<?php echo $phone; ?>">
+		</div>
+		<div class="input-group">
+			<label>Area</label>
+			<input type="text" name="area" value="<?php echo $area; ?>">
+		</div>
+		<div class="input-group">
+			<label>Qualification</label>
+			<input type="text" name="qualification" value="<?php echo $qualification; ?>">
+		</div>
+		<div class="input-group">
 			<button type="submit" class="btn" name="reg_user">Register</button>
 		</div>
 		<p>
-			Already a member? <a href="login.php">Sign in</a>
+			Already a member? <a href="login2.php">Sign in</a>
 		</p>
 		<p>
 			Go back to HomePage <a href="../index.html">Back</a>
