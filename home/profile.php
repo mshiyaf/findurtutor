@@ -3,7 +3,7 @@ session_start();
 ?>
 <!DOCTYPE html>
 <!-- saved from url=(0057)https://www.w3schools.com/w3css/tryw3css_templates_cv.htm -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>W3.CSS Template</title>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Profile</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
@@ -31,9 +31,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $_SESSION['email']; ?></p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $_SESSION['email']; ?></p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $_SESSION['area']; ?></p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $_SESSION['phone']; ?></p>
+          <p><i class="fa fa-mobile fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $_SESSION['phone']; ?></p>
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
@@ -139,6 +139,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p><a href="../index.html">Sign Out</a></p>
 </footer>
 
 
